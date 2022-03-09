@@ -8,6 +8,7 @@ void main()
     printf("Pls enter the breadth for the rectangle:-\n");
     scanf("%f",&b);
 
+
     ar=l*b;
     peri=(2*(l+b));
 

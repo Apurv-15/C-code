@@ -20,14 +20,9 @@ void main()
     case 5:
         printf("Second class=%d",marks);
         break;
-    
-    case 4:
-        printf("Atkt=%d",marks);
-        break;
-        
 
     default:
-        printf("invalid");
+        printf("fail");
         break;
     }
 }

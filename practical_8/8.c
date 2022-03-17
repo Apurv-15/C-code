@@ -1,54 +1,47 @@
 #include <stdio.h>
-void main()
-
+int main()
 {
-    int a, b, c, equi, type = 0, is_right = 0;
-    printf("Enter 3 sides of triangle\n");
-    scanf("%d %d %d ", &a, &b, &c);
-
-    if ((a == b) && (b == c) && (c == a))
-
+    int a, b, c, isRight = 0, type = 0;
+    printf("enter three sides of trianle\n");
+    scanf("%d %d %d", &a, &b, &c);
+    if ((a + b > c) && (b + c > a) && (a + c > b))
     {
-        type = 1;
-    }
-
-    else if ((a == b) || (b == c) || (c == a))
-    {
-        type = 2;
+        if ((a == b) && (b == c))
+        {
+            type = 1;
+        }
+        else if ((a == b) || (b == c) || (c == a))
+        {
+            type = 2;
+        }
+        else
+            type = 3;
     }
     else
     {
-        type = 3;
+        printf("the sides do not form a triangle");
     }
-
-
     a = a * a;
     b = b * b;
     c = c * c;
-    if ((a + b = c) || (b + c = a) || (a + c = b))
+    if ((a == b + c) || (b == a + c) || (c == a + b))
     {
-        is_right = 1
+        isRight = 1;
     }
-
     switch (type)
     {
     case 1:
-        printf("Triangle is equilateral triangle");
+        printf("It is an Equilateral Triangle\n");
         break;
-
     case 2:
-        printf("Triangle is isosceles triangle");
+        printf("It is an Isosceles Triangle\n");
         break;
-
     case 3:
-        if (is_right)
-            printf("Triangle is scalene right angled triangle");
+        if (isRight)
+            printf("It is a scalene RightAngled Triangle\n");
         else
-            printf("Triangle is scalene triangle");
-        break;
-
-    default:
-        printf("Given side do not form a triangle");
+            printf("It is a Scalene Triangle\n");
         break;
     }
+    return 0;
 }

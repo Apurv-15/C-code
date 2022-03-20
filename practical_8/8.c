@@ -2,7 +2,7 @@
 int main()
 {
     int a, b, c, isRight = 0, type = 0;
-    printf("enter three sides of trianle\n");
+    printf("enter three sides of triangle\n");
     scanf("%d %d %d", &a, &b, &c);
     if ((a + b > c) && (b + c > a) && (a + c > b))
     {

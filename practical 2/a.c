@@ -1,8 +1,12 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-  int i=1;
-  i=2+2*++i;
-  printf("%d",i);
-  return 0;
+    int a, b;
+    printf("Enter a number\n");
+    scanf("%d", &a);
+    b = a--;
+    printf("post decrement value of a is %d \n", b);
+    b = --a;
+    printf("pre decrement value of a is %d \n", b);
+    return 0;
 }

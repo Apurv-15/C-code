@@ -8,7 +8,8 @@ int main()
     {
         for (x = 1; x <= sp; x++)
             printf(" ");
-        for (j = 1; j <= i; j++)
+         
+         for (j = 1; j <= i; j++)
             printf("%d   ", i);
         printf("\n");
         sp = sp - 2;
